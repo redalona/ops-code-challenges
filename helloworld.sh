@@ -7,10 +7,8 @@
 
 
 # Main
-
-pwd
-whoami
-ip a
-sudo apt update
+greeting='Hello world!'
+name="I am working perfectly fine"
+echo "$name"
 
 # End
