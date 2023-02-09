@@ -7,16 +7,11 @@
 
 last
 function LOG_IN_HISTORY {
-firstname="John Alfred"
-lastname="Alona"
-reply="He is Learning"
-noreply="Help!"
+LogInHistory="$(hostname)"
+initiate="$last"
 
-if [ "$firstname" == "John Alfred" ]; then
-    echo "Struggling is learning! Keep it up!"
-else
-    echo "$noreply"
+if [ "$loginhistory" == "$hostname" ]; then
+    echo "$initiate"
 fi
 }
-# testing code
 LOG_IN_HISTORY
