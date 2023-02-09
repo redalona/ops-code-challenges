@@ -5,8 +5,6 @@
 # Date of latest revision: "02/08/2023"
 # Purpose: Write a script that prints the login history of users on this computer
 
-
-#Main 
 last
 function LOG_IN_HISTORY {
 firstname="John Alfred"
