@@ -5,11 +5,8 @@
 # Date of latest revision: "02/13/2023"
 # Purpose: Write a script using loop
 
-function kill1 (){
-    exec $(kill  201-Lab05.sh)
-}
 
-echo "Kill this process using it's PID"
+echo "Kill this process using ites PID"
 #PID
 countme=1
 while [[ $countme -eq 1 ]]; do
@@ -28,17 +25,24 @@ while [[ $countme -eq 1 ]]; do
 done
 
 #kill PID
+
+
 countme2=1
+function kill_ps_aux (){
+    kill -9 $(ps aux)
+}
 
 while [[ $countme2 -eq 1 ]]; do
-    echo "Please kill this process using PID. (type 1 to kill this process, 2 to repeat this instruction)"
-    read lab05
-    if [[ $lab05 == "1" ]]; then
-        kill1
-    elif [[ $lab05 == "2" ]]; then
-        echo "repeating instruction"
-        countme2=1
-    else echo "stop making nonsense"
+echo "Type 1 to kill ps aux or 2 to repeat"
+read pidkill
+
+    if [[ $pidkill == "1" ]]; then
+            echo "killing ps aux"
+            kill_ps_aux
+    elif [[ $pidkill == "2" ]]; then
+            countme2=1
+    else 
+    echo "Stop that"
     fi
 done
 
