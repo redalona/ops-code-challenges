@@ -47,3 +47,25 @@ sudo lshw | grep -A 15 "*-network"
                 # Capabilities
                 # Configuration
                 # Resources
+
+function dmidecode1 (){
+    sudo dmidecode -t bios
+}
+
+decode=1
+while [[ $decode -eq 1 ]]; do
+    echo  "do you want to run decode bios information?yes/no"
+    read dmi
+
+
+        if [[ $dmi == "yes" ]]; then    
+                echo "running dmidecode bios information"
+                dmidecode1
+                decode=0
+        elif [[ $dmi == "no" ]]; then
+                echo "okay, we are done."
+                decode=0
+        else echo "Incorrect input, Please enter yes or no"
+                decode=1
+        fi
+done
