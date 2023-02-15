@@ -1,6 +1,6 @@
 # Script: Ops 201 Class 03 Ops Challenge Solution
 # Author: John Alona
-# Date of latest revision: "02/08/2023"
+# Date of latest revision: "02/15/2023"
 # Purpose: Create a script that uses lshw with the following components
  
 sudo lshw | grep -A 7 "*-cpu" | grep -v "capabilities" | grep -v "version" 
@@ -54,7 +54,7 @@ function dmidecode1 (){
 
 decode=1
 while [[ $decode -eq 1 ]]; do
-    echo  "do you want to run decode bios information?yes/no"
+    echo  "do you want to run dmidecode bios information?yes/no"
     read dmi
 
 
