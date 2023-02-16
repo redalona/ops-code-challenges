@@ -6,3 +6,4 @@
 [lab07.sh]      (https://www.geeksforgeeks.org/dmidecode-command-in-linux-with-examples/)
                 (https://ubunlog.com/en/dmidecode-version-bios-terminal/)
 [lab08.sh]      (https://learn.microsoft.com/en-us/troubleshoot/windows-server/deployment/filenames-with-spaces-require-quotation-mark)        
+                (https://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches)
