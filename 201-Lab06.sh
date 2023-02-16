@@ -27,35 +27,23 @@ while [[ $count0 -eq 1 ]]; do
         fi
 done
 
-#creating text file
-
-function toucharray () {
-array1=("./dir1/" "./dir2/" "./dir3/" "./dir4/")   
-    touch "${array1[0]}file.txt"
-    touch "${array1[1]}file.txt"
-    touch "${array1[2]}file.txt"
-    touch "${array1[3]}file.txt"
-}
+#creating text or shell file
 
 count1=1
-
-while [[ $count1 -eq 1 ]]; do
-    
-    echo "do you want to create new files?yes or no"
-    read touch
-    
-        if [[ $touch == "yes" ]]; then
-        toucharray
+while [[ $count1 -eq 1 ]]; do   
+echo "Good, Better, Best (Pick One)"
+read GBG
+Array1=("Good" "Better" "Best") 
+    if [[ $GBG == "Good" ]]; then
+        touch "${Array1[0]}.txt"
         count1=0
-        echo Done!
-        elif [[ $touch == "no" ]]; then
-        echo "terminating......."
-        echo "Done!"
+    elif [[ $GBG == "Better" ]]; then
+        touch "${Array1[1]}.txt"
         count1=0
-        else echo "You are better than that!"
+    elif [[ $GBG == "Best" ]]; then
+        touch "${Array1[2]}.txt"
+        count1=0
+    else echo "Which one are you?"
         count1=1
-        fi
+    fi
 done
-
-
-
