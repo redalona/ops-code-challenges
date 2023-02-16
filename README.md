@@ -5,4 +5,4 @@
 [lab05.sh]      (https://linuxconfig.org/bash-script-yes-no-prompt-example)
 [lab07.sh]      (https://www.geeksforgeeks.org/dmidecode-command-in-linux-with-examples/)
                 (https://ubunlog.com/en/dmidecode-version-bios-terminal/)
-        
+[lab08.sh]      (https://learn.microsoft.com/en-us/troubleshoot/windows-server/deployment/filenames-with-spaces-require-quotation-mark)        
