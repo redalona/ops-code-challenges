@@ -7,4 +7,4 @@ Get-Eventlog -LogName System  -InstanceID 16
 # Print to the screen the most recent 20 entries from the System event log.
 Get-Eventlog -LogName System -Newest 20
 # Print to the screen all sources of the 500 most recent entries in the System event log. Ensure that the full lines are displayed (get rid of the … and show the entire text).
-Get-Eventlog -LogName System -Newest 50 | format-table -wrap
+Get-Eventlog -LogName System -Newest 500 | format-table -wrap
