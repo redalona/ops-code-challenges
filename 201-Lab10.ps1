@@ -9,7 +9,7 @@ Start-Process iexplore https://owasp.org/www-project-top-ten/
 # Start the process Internet Explorer (iexplore.exe) ten times using a for loop. Have each instance open https://owasp.org/www-project-top-ten/.
 for ($i=0; $i -le 10; $i++)
 {
-    Start-Process iexplore
+    Start-Process iexplore https://owasp.org/www-project-top-ten/
 }
 # Close all Internet Explorer windows.
 Stop-Process iexplore
