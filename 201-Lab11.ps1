@@ -1,7 +1,7 @@
-# Script: Ops 201 Class 04 Ops Challenge Solution
-# Author: John Alona
-# Date of latest revision: "02/09/2023"
-# Purpose: Write a script using array
+# Script: Ops 201 Class 11 Code Challenge Solution
+# Author: John Alfred Alona
+# Date of latest revision: "02/20/2023"
+# Purpose: Write a script for the following
 
 # Enable File and Printer Sharing
 Set-NetFirewallRule -DisplayGroup "File And Printer Sharing" -Enabled True
@@ -25,16 +25,3 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 
 # Disable SMBv1, an insecure protocol
 Set-SmbServerConfiguration -EnableSMB1Protocol $false -Force
-
-# Did your script enable File and Printer Sharing? 
-# What did you do to test before/after?
-# Did your script allow ICMP traffic?
-# What did you do to test before/after?
-# Did your script enable Remote management?
-# What did you do to test before/after?
-# Did your script remove bloatware?
-# What did you do to test before/after?
-# Did your script enable Hyper-V?
-# What did you do to test before/after?
-# Did your script disable SMBv1?
-# What did you do to test before/after?
