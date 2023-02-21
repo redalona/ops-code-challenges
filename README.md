@@ -13,3 +13,4 @@
                 (https://lazyadmin.nl/powershell/running-scripts-is-disabled-on-this-system/#set-execution-policy-for-all-users)
 [Lab10.ps1]     (https://ourtechroom.com/tech/open-weburl-using-powershell-commandline/)
                 (https://www.youtube.com/watch?v=zsJ2o42bV54)
+[Lab11.ps1]     (https://github.com/superswan/Powershell-SysAdmin)
