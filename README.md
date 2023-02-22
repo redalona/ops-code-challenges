@@ -14,3 +14,5 @@
 [Lab10.ps1]     (https://ourtechroom.com/tech/open-weburl-using-powershell-commandline/)
                 (https://www.youtube.com/watch?v=zsJ2o42bV54)
 [Lab11.ps1]     (https://github.com/superswan/Powershell-SysAdmin)
+[Lab12.ps1]     (https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-string?view=powershell-7.3#description)
+                (https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-item?view=powershell-7.3)
