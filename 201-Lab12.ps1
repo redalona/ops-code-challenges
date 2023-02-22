@@ -8,7 +8,7 @@ ipconfig /all >network_report.txt
 
 # Use Select-String to search network_report.txt and return only the IP version 4 address.
 function net_rep {
-    Select-String -Path .\network_report.txt -Pattern "IPv4" |
+    Select-String -Path .\network_report.txt -Pattern "IPv4"
 }
 net_rep
 # Remove the network_report.txt when you are finished searching it.
