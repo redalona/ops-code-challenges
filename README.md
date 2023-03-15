@@ -35,3 +35,4 @@
 <br><br>[Lab12.ps1]     <br>(https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-string?view=powershell-7.3#description)
                 <br>(https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-item?view=powershell-7.3)<br>
 <br><br>[Lab13.sh]      <br>(https://www.linode.com/docs/guides/how-to-grep-for-text-in-files/)
+<br><br>[301 Challenge 02](https://google.github.io/styleguide/shellguide.html)
