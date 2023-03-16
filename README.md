@@ -36,3 +36,6 @@
                 <br>(https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/remove-item?view=powershell-7.3)<br>
 <br><br>[Lab13.sh]      <br>(https://www.linode.com/docs/guides/how-to-grep-for-text-in-files/)
 <br><br>[301 Challenge 02](https://google.github.io/styleguide/shellguide.html)
+<br><br>[301 Challenge 03](https://stackoverflow.com/questions/59717972/bash-getting-the-directory-of-user-input)
+                    (https://stackoverflow.com/questions/21277963/how-to-display-contents-of-all-files-under-a-directory-on-the-screen-using-unix)
+                    (https://unix.stackexchange.com/questions/60459/how-to-make-bash-put-prompt-on-a-new-line-after-cat-command)
