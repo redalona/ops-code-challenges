@@ -1,4 +1,4 @@
-
+#!/bin/bash
 # Script: Ops 301 Class 04 Ops Challenge Solution
 # Author: John Alfred C. Alona
 # Date of latest revision: "03/17/2023"
