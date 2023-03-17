@@ -31,7 +31,7 @@ while [[ $countme1 == "1" ]]; do
       ping $ping1
       countme1=1
     elif [[ $command == "3" ]]; then
-      lshw
+      lshw -class network
       countme1=1
     elif [[ $command == "4" ]]; then
       echo "TERMINATING!!!"
