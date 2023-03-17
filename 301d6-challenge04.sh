@@ -1,7 +1,7 @@
 
 # Script: Ops 301 Class 04 Ops Challenge Solution
 # Author: John Alfred C. Alona
-# Date of latest revision: "03/16/2023"
+# Date of latest revision: "03/17/2023"
 # Purpose: 
 
 # a bash script that launches a menu system with the following options:
@@ -28,7 +28,7 @@ while [[ $countme1 == "1" ]]; do
       countme1=1
     elif [[ $command == "2" ]]; then
       read -p "Type your ping: " ping1
-      ping $("ping1")
+      ping $ping1
       countme1=1
     elif [[ $command == "3" ]]; then
       lshw
@@ -36,7 +36,7 @@ while [[ $countme1 == "1" ]]; do
     elif [[ $command == "4" ]]; then
       echo "TERMINATING!!!"
       countme1=0
-    else "Please only select from 1-4"
+    else
       countme1=1
     fi
 done
