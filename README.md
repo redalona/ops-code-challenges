@@ -39,3 +39,7 @@
 <br><br>[301 Challenge 03](https://stackoverflow.com/questions/59717972/bash-getting-the-directory-of-user-input)
                     (https://stackoverflow.com/questions/21277963/how-to-display-contents-of-all-files-under-a-directory-on-the-screen-using-unix)
                     (https://unix.stackexchange.com/questions/60459/how-to-make-bash-put-prompt-on-a-new-line-after-cat-command)
+<br><br>[301 Challenge 04](https://unix.stackexchange.com/questions/16640/how-can-i-get-the-size-of-a-file-in-a-bash-script)
+                    (https://subinsb.com/bash-if-else-elif-conditions/)
+                    (https://unix.stackexchange.com/questions/231953/how-to-get-the-current-date-and-time-in-yyyymmddhhmmss-format-in-ksh88)
+                    (https://www.makeuseof.com/linux-zip-folder/)
