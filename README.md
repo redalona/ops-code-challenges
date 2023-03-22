@@ -43,3 +43,4 @@
                     (https://subinsb.com/bash-if-else-elif-conditions/)
                     (https://unix.stackexchange.com/questions/231953/how-to-get-the-current-date-and-time-in-yyyymmddhhmmss-format-in-ksh88)
                     (https://www.makeuseof.com/linux-zip-folder/)
+<br><br>[301 Challenge 08](https://chat.openai.com/chat)                    
