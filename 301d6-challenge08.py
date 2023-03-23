@@ -2,7 +2,7 @@
 
 # Script: Ops 301 Class 08 Ops Challenge Solution
 # Author: John Alfred C. Alona
-# Date of latest revision: "03/22/2023"
+# Date of latest revision: "03/23/2023"
 # Purpose:
 
 #Main
