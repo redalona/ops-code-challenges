@@ -11,7 +11,7 @@ Str10 = ["Aardvark", "Babirusa", "Cabbage Moth", "Dachsador", "Eagle", "Fainting
 # Print the fourth element of the list.
 print(Str10[3])
 # Print the sixth through tenth element of the list.
-print(Str10[5:9])
+print(Str10[5:10])
 # Change the value of the seventh element to “onion”.
 Str10[6] = "onion"
 print(Str10[6])
