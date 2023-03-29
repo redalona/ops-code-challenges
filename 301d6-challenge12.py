@@ -2,7 +2,7 @@
 
 # Script: Ops 301 Class 11 Ops Challenge Solution
 # Author: John Alfred C. Alona
-# Date of latest revision: "03/28/2023"
+# Date of latest revision: "03/29/2023"
 # Purpose: 
 
 # Create a Python script that performs the following:
@@ -27,8 +27,23 @@ if URL.startswith("http://") or URL.startswith("https://"):
     #         HEAD
     #         PATCH
     #         OPTIONS
+        
+        #     Print to the screen the entire request your script is about to send. Ask the user to confirm before proceeding.
+    if getreq == "1":
+        print("Doing a request.get for " + URL)
+    if getreq == "2":
+        print("Doing a request.post for " + URL)
+    if getreq == "3":
+        print("Doing a request.put for " + URL)
+    if getreq == "4":
+        print("Doing a request.delete for " + URL)
+    if getreq == "5":
+        print("Doing a request.head for " + URL)
+    if getreq == "6":
+        print("Doing a request.patch for " + URL)
+    if getreq == "7":
+        print("Doing a request.options for " + URL)
     cnfrm = input("do you want to continue?y/n?")
-    #     Print to the screen the entire request your script is about to send. Ask the user to confirm before proceeding.
     responses = {
     # The list is separated by kind.
     # Informational 1xx
