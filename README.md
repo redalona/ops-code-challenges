@@ -49,3 +49,4 @@
                     (https://stackoverflow.com/questions/62860280/git-push-missing-or-invalid-credentials-fatal-authentication-failed-for-http)
 <br><br>[301 Challenge 12](https://github.com/waldemarnt/http-status-codes)
                     (https://chat.openai.com/chat) for determining if the input is a link or not.
+<br><br>[301 Challenge 13](https://learn.microsoft.com/en-us/powershell/module/activedirectory/new-aduser?view=windowsserver2022-ps)
