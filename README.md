@@ -50,3 +50,4 @@
 <br><br>[301 Challenge 12](https://github.com/waldemarnt/http-status-codes)
                     (https://chat.openai.com/chat) for determining if the input is a link or not.
 <br><br>[301 Challenge 13](https://learn.microsoft.com/en-us/powershell/module/activedirectory/new-aduser?view=windowsserver2022-ps)
+<br><br>[301 Challenge 13](https://chat.openai.com/chat/d02d108a-2e7d-445c-b60e-fd68115fba83) Explained line by line.
