@@ -1,0 +1,17 @@
+# Create Users 
+echo "Fill user credentials correctly"
+$WNAME = Read-Host -Prompt 'Input Full Name'
+$GNAME = Read-Host -Prompt 'Input Given Name'
+$SNAME = Read-Host -Prompt 'Input Surname'
+$UNAME = Read-Host -Prompt 'Input Login Username'
+$TITLE = Read-Host -Prompt 'Input Title(Position)'
+$COM = Read-Host -Prompt 'Input Company Name'
+$OFF = Read-Host -Prompt 'Input Office Location'
+$DEP = Read-Host -Prompt 'Input Company Department of User'
+$EADD = Read-Host -Prompt 'Input User Email Address'
+
+function Aduser {
+ New-Aduser -Name $WNAME -GivenName $GNAME -Surname $SNAME -SamAccountName $UNAME -Title $TITLE -company $COM -Office $OFF -Department $DEP -EmailAddress $EADD
+}
+
+$Aduser
