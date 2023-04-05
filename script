@@ -1,0 +1,35 @@
+# Module 1: Assign static IP and DNS
+# Prompt user for IP address, subnet mask, default gateway, and DNS server
+$IP = Read-Host "Enter IP Address"
+$SubnetMask = Read-Host "Enter Subnet Mask"
+$Gateway = Read-Host "Enter Default Gateway"
+$DNS = Read-Host "Enter DNS Server"
+# Set the static IP address and DNS server
+New-NetIPAddress -InterfaceAlias Ethernet -IPAddress $IP -PrefixLength $SubnetMask -DefaultGateway $Gateway
+Set-DnsClientServerAddress -InterfaceAlias Ethernet -ServerAddresses $DNS
+# Module 2: Rename the Windows Server VM
+# Prompt user for a new name for the Windows Server VM and rename it
+$NewName = Read-Host "Enter a new name for the Windows Server VM"
+Rename-Computer -NewName $NewName -Restart
+# Module 3: Install AD-Domain-Services
+# Install the AD-Domain-Services feature
+Install-WindowsFeature -Name AD-Domain-Services
+# Module 4: Create AD Forest, OU, and Users
+# Prompt user for Forest name, OU name and user details
+$ForestName = Read-Host "Enter Forest Name"
+$OUName = Read-Host "Enter OU Name"
+$AdminUser = Read-Host "Enter Administrator Username"
+$AdminPassword = Read-Host -AsSecureString "Enter Administrator Password"
+$UserName = Read-Host "Enter User Name"
+$UserPassword = Read-Host -AsSecureString "Enter User Password"
+# Create AD Forest
+New-ADForest -Name $ForestName -DomainMode Win2012R2 -ForestMode Win2012R2 -DomainName $ForestName -DomainNetbiosName $ForestName
+# Create Organizational Unit
+New-ADOrganizationalUnit -Name $OUName -Path "DC=$ForestName,DC=com"
+# Create Administrator User
+$AdminUserPrincipalName = "$AdminUser@$ForestName.com"
+New-ADUser -Name $AdminUser -SamAccountName $AdminUser -UserPrincipalName $AdminUserPrincipalName -AccountPassword $AdminPassword -Enabled $True -PasswordNeverExpires $True -ChangePasswordAtLogon $False -Path "OU=$OUName,DC=$ForestName,DC=com"
+# Create User
+$UserPrincipalName = "$UserName@$ForestName.com"
+New-ADUser -Name $UserName -SamAccountName $UserName -UserPrincipalName $UserPrincipalName -AccountPassword $UserPassword -Enabled $True -PasswordNeverExpires $True -ChangePasswordAtLogon $False -Path "OU=$OUName,DC=$ForestName,DC=com"
+# End of Script
