@@ -1,9 +1,9 @@
 
 ## What is this repo all about?
-- This repo is a combination of Powershell and Bash Script during our Ops and Cybersecurity 201 course code challenges lab.
+- This repo is a compilation of different script language during our Ops and Cybersecurity course code challenges lab.
 ## Why are you learning these skills?
 - I am learning this skill because these coding languages are beginnner-friendly.
-## What fundamental concepts did you learn in Ops 201?
+## What fundamental concepts did you learn in Ops?
 - The proper steps to take when troubleshooting and fundamentals for writing and running scripts. 
 
 ## What was your favorite Ops Challenge assignment and why?
