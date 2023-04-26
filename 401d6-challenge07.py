@@ -57,7 +57,6 @@ def decrypt_folder(key, folder):
 # Example usage
 if __name__ == '__main__':
     mode = sys.argv[1] if len(sys.argv) > 1 else 'encrypt'
-    key = generate_key()
 
     # Prompt the user for a directory path
     folder = input('Enter a directory path to encrypt/decrypt: ')
@@ -68,9 +67,28 @@ if __name__ == '__main__':
         sys.exit(1)
 
     if mode == 'encrypt':
+        key = generate_key()
+
+        # Prompt the user to choose how to get the key
+        key_input = input('Do you want to print the key to the console (c) or save it to a file (f)? ')
+
+        if key_input == 'c':
+            print(f'The encryption key is: {key.decode()}')
+        elif key_input == 'f':
+            key_filename = input('Enter a filename for the key (default is "key.txt"): ') or 'key.txt'
+            with open(key_filename, 'wb') as f:
+                f.write(key)
+        else:
+            print(f'Invalid input: {key_input}. Valid inputs are "c" or "f"')
+            sys.exit(1)
+
         print('Encrypting files...')
         encrypt_folder(key, folder)
     elif mode == 'decrypt':
+        key_filename = input('Enter the filename of the key: ')
+        with open(key_filename, 'rb') as f:
+            key = f.read()
+
         print('Decrypting files...')
         decrypt_folder(key, folder)
     else:
